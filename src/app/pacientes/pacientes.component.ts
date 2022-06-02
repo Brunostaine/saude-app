@@ -23,5 +23,12 @@ export class PacientesComponent implements OnInit {
         })
     }
     
-
+    delete(id: any) {
+        
+        this.pacientesService.delete(id).subscribe(
+        success => {
+            alert('Paciente deletado')
+            location.reload()
+        })
+    }
 }

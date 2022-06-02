@@ -26,6 +26,11 @@ export class PacientesService {
         return this.http.post<Pacientes>(this.urlBase, paciete);
     }
 
+    delete(id: any): Observable<Pacientes> {
+        const url = `${this.urlBase}/${id}`;
+        return this.http.delete<Pacientes>(url)
+    }
+
     
 
 }

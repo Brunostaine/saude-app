@@ -1,3 +1,4 @@
+import { CreatePacienteComponent } from './pacientes/pacientes/create-paciente/create-paciente.component';
 import { PacienteComponent } from './pacientes/paciente/paciente.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,6 +10,7 @@ import { UpdatePacienteComponent } from './pacientes/pacientes/update-paciente/u
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'pacientes', component: PacientesComponent},
+    {path: 'pacientes/create', component: CreatePacienteComponent},
     {path: 'pacientes/paciente/:id', component: PacienteComponent},
     
 ];
