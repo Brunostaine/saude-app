@@ -1,0 +1,22 @@
+.background{
+    background: #FA2E29;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 16px
+}
+.menu {
+    margin-right: 16px;
+    vertical-align: center;
+}
+.icone {
+    font-size: 2.2rem;
+}
+.title {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    margin: auto;
+    align-items: center;
+    text-transform: capitalize;
+}
