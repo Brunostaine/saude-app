@@ -8,6 +8,16 @@
     width: 100%
 }
 
+.btn {
+    border: none;
+    background-color: #E02724;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 8px;
+}
+
 @media (min-width: 500px) {
     
     .card-item {

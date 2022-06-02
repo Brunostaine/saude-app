@@ -11,6 +11,8 @@ import { PacientesComponent } from './pacientes/pacientes.component';
 import { HomeComponent } from './home/home.component';
 import { UpdatePacienteComponent } from './pacientes/update-paciente/update-paciente.component';
 import { PacienteComponent } from './pacientes/paciente/paciente.component';
+import { ConsultasComponent } from './pacientes/paciente/consultas/consultas.component';
+import { DadosPessoaisComponent } from './pacientes/paciente/dados-pessoais/dados-pessoais.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { PacienteComponent } from './pacientes/paciente/paciente.component';
     HomeComponent,
     UpdatePacienteComponent,
     PacienteComponent,
+    ConsultasComponent,
+    DadosPessoaisComponent,
     
     
     

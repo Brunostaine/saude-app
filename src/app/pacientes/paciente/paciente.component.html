@@ -1,24 +1,26 @@
 <mat-card class="card">
 
+    
+
     <mat-card-title>Olá, {{ paciente.name }}!</mat-card-title>
     <mat-card-subtitle>Aqui tem todos os seus dados.</mat-card-subtitle>
 
-<mat-card class="card-body">
-    <div class="card-item">
-        <mat-card-subtitle>Id</mat-card-subtitle>
-        <mat-card-content>{{ paciente.id }}</mat-card-content>
-    </div>
-    <div class="card-item">
-        <mat-card-subtitle>Nome</mat-card-subtitle>
-        <mat-card-content>{{ paciente.name }}</mat-card-content>
-    </div>
-    <div class="card-item">
-        <mat-card-subtitle>Data de Nascimento</mat-card-subtitle>
-        <mat-card-content>{{ paciente.dataNascimento }}</mat-card-content>
-    </div>
-    <div class="card-item">
-        <mat-card-subtitle>Idade</mat-card-subtitle>
-        <mat-card-content>{{ paciente.idade }}</mat-card-content>
-    </div>
+    <button class="btn" routerLink="/pacientes" >Voltar</button>
+      
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Pessoal">
+            <app-dados-pessoais></app-dados-pessoais>
+            
+        
+        </mat-tab>
+        <mat-tab label="Consultas">
+            <app-consultas></app-consultas>
+        </mat-tab>
+        <mat-tab label="Exames">Content 3</mat-tab>
+      </mat-tab-group>
+
 </mat-card>
-</mat-card>
+
+    
+
+
