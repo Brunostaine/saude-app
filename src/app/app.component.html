@@ -1,4 +1,21 @@
-<app-header></app-header>
-<app-nav></app-nav>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-sidenav-container >
+        <div class="sidenav-content">
+            <mat-icon mat-icon-buttom (click)="drawer.toggle()">menu</mat-icon>
+            <h1 class="sidenav-content-title">App Saúde</h1>
+        </div>
+</mat-sidenav-container>
+
+<mat-drawer-container class="nav-container" autosize>
+
+    <mat-drawer #drawer class="nav-sidenav" mode="side">
+        <mat-list role="list" class="list">
+            <mat-list-item class="list-home" routerLink="" role="listitem">Home</mat-list-item>
+            <mat-list-item class="list-pacientes" (click)="onPacientes()" role="listitem">Pacientes</mat-list-item>
+        </mat-list>
+    </mat-drawer> 
+
+    <router-outlet></router-outlet>
+
+  </mat-drawer-container>
+
+

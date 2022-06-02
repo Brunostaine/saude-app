@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'saude-app';
+
+    constructor(private router: Router) {
+
+    }
+    showFiller = false;
+
+    onPacientes(){
+        this.router.navigate(['/pacientes'])
+        
+    }
 }
+
