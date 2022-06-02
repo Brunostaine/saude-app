@@ -1,0 +1,17 @@
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    width: 100%
+}
+
+@media (min-width: 500px) {
+    
+    .card-item {
+        margin-right: 16px;
+    width: 200px;
+    }
+}

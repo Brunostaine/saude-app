@@ -17,6 +17,11 @@ export class PacientesService {
     return this.http.get<Pacientes[]>(this.urlBase)
     }
 
+    readId(id: any): Observable<Pacientes> {
+        const url = `${this.urlBase}/${id}`;
+        return this.http.get<Pacientes>(url)
+    }
+
     create(paciete: Pacientes): Observable<Pacientes> {
         return this.http.post<Pacientes>(this.urlBase, paciete);
     }
