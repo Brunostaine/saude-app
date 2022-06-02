@@ -12,6 +12,7 @@ const routes: Routes = [
     {path: 'pacientes', component: PacientesComponent},
     {path: 'pacientes/create', component: CreatePacienteComponent},
     {path: 'pacientes/paciente/:id', component: PacienteComponent},
+    {path: 'pacientes/update/:id', component: UpdatePacienteComponent},
     
 ];
 

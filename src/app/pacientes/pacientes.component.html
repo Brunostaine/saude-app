@@ -26,7 +26,10 @@
             sortActionDescription="Sort by acoes"> ações
         </th>
         <td mat-cell *matCellDef="let element">
-            
+            <a>
+                <i class="edit material-icons" 
+                routerLink="/pacientes/update/{{ element.id }}">edit</i>
+            </a>
             
             <a>
                 <i class="visualizar material-icons" 

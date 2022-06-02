@@ -11,6 +11,12 @@ table {
     width: 100%;
 }
 
+.edit {
+    color: #9bb410;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 .visualizar {
     color: #0c709e;
     cursor: pointer;
