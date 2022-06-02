@@ -3,7 +3,8 @@
     color: #fff;
     justify-content: center;
     align-items: center;
-    padding: 16px
+    padding: 16px;
+    position: relative;
 }
 .menu {
     margin-right: 16px;
