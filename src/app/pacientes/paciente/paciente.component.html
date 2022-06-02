@@ -1,7 +1,5 @@
 <mat-card class="card">
 
-    
-
     <mat-card-title>Olá, {{ paciente.name }}!</mat-card-title>
     <mat-card-subtitle>Aqui tem todos os seus dados.</mat-card-subtitle>
 
@@ -13,10 +11,12 @@
             
         
         </mat-tab>
-        <mat-tab label="Consultas">
+        <mat-tab label="Marcação">
             <app-consultas></app-consultas>
         </mat-tab>
-        <mat-tab label="Exames">Content 3</mat-tab>
+        <mat-tab label="Resultados">
+            <h2>Resultado de exames</h2>
+        </mat-tab>
       </mat-tab-group>
 
 </mat-card>
