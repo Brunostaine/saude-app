@@ -1,4 +1,7 @@
+import { Router } from '@angular/router';
+import { PacientesService } from './../../pacientes.service';
 import { Component, OnInit } from '@angular/core';
+import { Pacientes } from '../../pacientes';
 
 @Component({
   selector: 'app-create-paciente',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePacienteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pacientesService: PacientesService, private router: Router) { }
+
+  paciente: Pacientes = {
+    name: '',
+    dataNascimento: '',
+    idade: ''
+  }
 
   ngOnInit(): void {
+  }
+
+  save(){
+
+    this.pacientesService.create(this.paciente).subscribe((res) => {
+      this.paciente = res
+      this.router.navigate(['/pacientes'])
+    })
+      
+  
+}
+
+  cancel(){
+      
+      this.router.navigate(['/pacientes'])
+    
   }
 
 }

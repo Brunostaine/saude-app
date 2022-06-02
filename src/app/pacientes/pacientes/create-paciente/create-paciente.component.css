@@ -1,9 +1,56 @@
+h2 {
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+    font-weight: 700;
+    margin-top: 16px;
+}
+
 .form {
-    min-width: 150px;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
-  }
-  
-  .full-width {
+    flex-wrap: wrap;
+}
+
+.full-width {
     width: 100%;
-  }
+    margin-right: 16px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn-salvar {
+    background-color: #1358da;
+    color: #fff;
+    margin-right: 8px;
+    font-size: 1.2rem;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: .8s;
+}
+.btn-salvar:hover {
+    background-color: #104bb8;
+}
+.btn-cancelar {
+    background-color: #bb1237;
+    color: #fff;
+    margin-right: 8px;
+    font-size: 1.2rem;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: .8s;
+}
+.btn-cancelar:hover {
+    background-color: #d1133c;
+}
+@media (min-width: 800px) {
+    .full-width {
+        width: 60%;
+
+    }
+}

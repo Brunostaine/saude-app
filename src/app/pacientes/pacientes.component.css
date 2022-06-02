@@ -2,6 +2,10 @@ table {
     width: 100%;
 }
 
+.title {
+    margin-right: 32px;
+}
+
 .mat-form-field {
     font-size: 14px;
     width: 100%;
@@ -17,6 +21,7 @@ table {
     color: rgb(12, 158, 12);
     cursor: pointer;
     margin-right: 10px;
+    font-size: 2rem;
 }
 
 .delete {

@@ -3,6 +3,19 @@
 <form class="form">
     <mat-form-field class="full-width" appearance="fill">
       <mat-label>Nome Completo</mat-label>
-      <input matInput placeholder="Ex. Joaquin da silva">
+      <input matInput placeholder="Ex. Joaquin da silva" required [(ngModel)]="paciente.name" name="name">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Data de Nascimento</mat-label>
+        <input matInput placeholder="Ex. 01/02/2022" required [(ngModel)]="paciente.dataNascimento" name="dataNascimento">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Idade</mat-label>
+        <input matInput placeholder="Ex. 30 anos" required [(ngModel)]="paciente.idade" name="idade">
     </mat-form-field>
   </form>
+
+  <div class="btn">
+      <button class="btn-salvar" (click)="save()">Salvar</button>
+      <button class="btn-cancelar" (click)="cancel()">Cancelar</button>
+  </div>

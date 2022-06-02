@@ -1,5 +1,9 @@
 <mat-toolbar>
-    <span>Pacientes cadastrados</span>
+    <span class="title">Pacientes cadastrados</span>
+    <a>
+        <i class="create material-icons"  
+        routerLink="/pacientes/create">person_add</i>
+    </a>
   </mat-toolbar>
 
 <table mat-table [dataSource]="pacientes" class="mat-elevation-z8">
@@ -23,10 +27,7 @@
         </th>
         <td mat-cell *matCellDef="let element">
             
-            <a>
-                <i class="create material-icons" 
-                routerLink="/pacientes/create">person_add</i>
-            </a>
+            
             <a>
                 <i class="visualizar material-icons" 
                 routerLink="/pacientes/paciente/{{ element.id }}">visibility</i>
