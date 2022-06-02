@@ -7,13 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PacientesComponent } from './pacientes/pacientes.component';
 import { HomeComponent } from './home/home.component';
-import { UpdatePacienteComponent } from './pacientes/update-paciente/update-paciente.component';
-import { PacienteComponent } from './pacientes/paciente/paciente.component';
 import { ConsultasComponent } from './pacientes/paciente/consultas/consultas.component';
 import { DadosPessoaisComponent } from './pacientes/paciente/dados-pessoais/dados-pessoais.component';
-import { CreateComponent } from './pacientes/create/create.component';
+import { PacienteComponent } from './pacientes/paciente/paciente.component';
+import { PacientesComponent } from './pacientes/pacientes.component';
+import { CreatePacienteComponent } from './pacientes/pacientes/create-paciente/create-paciente.component';
+import { UpdatePacienteComponent } from './pacientes/pacientes/update-paciente/update-paciente.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { CreateComponent } from './pacientes/create/create.component';
     PacienteComponent,
     ConsultasComponent,
     DadosPessoaisComponent,
-    CreateComponent,
+    
+    CreatePacienteComponent,
     
     
     
