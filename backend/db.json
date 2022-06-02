@@ -1,0 +1,10 @@
+{
+    "pacientes": [
+        {
+            "id": 1, 
+            "name": "Admin saude app",
+            "dataNascimento": "01/01/2022",
+            "idade": "1 ano"
+        }
+    ]
+}
