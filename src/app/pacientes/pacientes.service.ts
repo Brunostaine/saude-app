@@ -13,8 +13,12 @@ export class PacientesService {
 
     constructor(private http: HttpClient) { }
 
-    read(): Observable<Pacientes[]> {
+    lista(): Observable<Pacientes[]> {
     return this.http.get<Pacientes[]>(this.urlBase)
+    }
+
+    create(paciete: Pacientes): Observable<Pacientes> {
+        return this.http.post<Pacientes>(this.urlBase, paciete);
     }
 
     

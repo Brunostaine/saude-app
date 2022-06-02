@@ -9,12 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PacientesComponent } from './pacientes/pacientes.component';
 import { HomeComponent } from './home/home.component';
+import { UpdatePacienteComponent } from './pacientes/update-paciente/update-paciente.component';
+import { PacienteComponent } from './pacientes/paciente/paciente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PacientesComponent,
     HomeComponent,
+    UpdatePacienteComponent,
+    PacienteComponent,
     
     
     
