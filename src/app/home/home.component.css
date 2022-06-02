@@ -1,0 +1,16 @@
+img{
+    max-width: 766px;
+    background-size: cover;
+    padding: 50px;
+}
+
+@media (min-width: 600px){
+    .container {
+        text-align: center;
+
+    }
+
+    img {
+        margin: auto;
+    }
+}
