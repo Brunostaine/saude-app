@@ -21,7 +21,7 @@ export class PacientesService {
     }
 
     readId(id: any): Observable<Pacientes> {
-        const url = `${this.urlBase}/${id}`;
+        const url = `${this.urlBase}/paciente/${id}`;
         return this.http.get<Pacientes>(url)
     }
 
