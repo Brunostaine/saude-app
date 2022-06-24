@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -9,7 +10,9 @@ import { Pacientes } from './pacientes';
 })
 export class PacientesService {
 
-    urlBase = 'http://localhost:3020/pacientes'
+    
+
+    urlBase = `${environment.apiUrl}pacientes`
 
     constructor(private http: HttpClient) { }
 
@@ -34,8 +37,6 @@ export class PacientesService {
     update(paciente: Pacientes): Observable<Pacientes> {
         const url = `${this.urlBase}/${paciente.id}`;
         return this.http.put<Pacientes>(url, paciente);
-      }
-
-    
+    }
 
 }

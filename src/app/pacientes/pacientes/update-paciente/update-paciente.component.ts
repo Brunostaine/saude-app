@@ -13,32 +13,32 @@ export class UpdatePacienteComponent implements OnInit {
         name: '',
         dataNascimento: '',
         idade: ''
-      }
+        }
 
-  constructor(private pacientesService: PacientesService, private router: Router, private route: ActivatedRoute) { }
+    constructor(private pacientesService: PacientesService, private router: Router, private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+    ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.pacientesService.readId(id).subscribe( res => {
         this.paciente = res
     })
-  }
+    }
 
-  
 
-  
 
-  update(){
+
+
+    update(){
     this.pacientesService.update(this.paciente).subscribe( () => {
         this.router.navigate(['/pacientes'])
     })
     alert('Paciente atualizado com sucesso!')
-}
+    }
 
-  cancel(){
-      
-      this.router.navigate(['/pacientes'])
-    
-  }
+    cancel(){
+        
+        this.router.navigate(['/pacientes'])
+
+    }
 
 }
