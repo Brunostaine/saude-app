@@ -12,6 +12,7 @@ export class PacientesComponent implements OnInit {
 
 
     pacientes: Pacientes[] = []
+    
     displayedColumns: string[] = ['id', 'name', 'acoes'];
 
 
