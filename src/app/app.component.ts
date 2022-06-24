@@ -12,7 +12,7 @@ export class AppComponent {
     constructor(private router: Router) {
 
     }
-    showFiller = false;
+    
 
     onPacientes(){
         this.router.navigate(['/pacientes'])
